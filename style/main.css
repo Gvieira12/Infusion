@@ -8,7 +8,7 @@ img {
     max-width: 100%;
 }
 
-.content {
+.container {
     margin-right: auto;
     margin-left: auto;
     padding-left: 1em;
@@ -154,4 +154,49 @@ img {
 .people-content p {
     color: #929da5;
     font-size: 14px;
+}
+
+.content {
+    border-top: 2px solid #e3e3e3;
+    background-color: #f8f9f9;
+    padding: 20px 0 80px;
+}
+
+.content h3 {
+    color: #737c85;
+    font-size: 21px;
+    font-weight: 400px;
+    padding-top: 40px;
+}
+
+.content p {
+    word-spacing: 3px;
+    color: #929da5;
+    font-size: 14px;
+}
+
+.button {
+    padding: 15px 40px;
+    border-radius: 3px;
+    font-weight: 600px;
+    font-size: 15px;
+    text-decoration: none;
+    margin-right: 15px;
+    display: inline-block;
+    transition: 1s all ease;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #929da5;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #63c6ae;
+}
+
+.btn-secondary {
+    color: white;
+    background-color: #455357;
 }
