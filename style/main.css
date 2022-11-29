@@ -31,9 +31,9 @@ img {
 .header-nav li {
     list-style-type: none;
     background: #242c2c;
-    border-bottom: 1px dotted rgba(255, 255, 255, 0.2) ;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
     text-align: center;
-    
+
 }
 
 .header-nav a {
@@ -48,7 +48,7 @@ img {
 
 .header-nav a:hover {
     color: #63c6ae;
-} 
+}
 
 .nav-button {
     display: none;
@@ -57,8 +57,11 @@ img {
 .hero {
     height: 80vh;
     padding: 40px 20px;
-    background-image: url('../img/01.jpg');
-    background-size: cover;
+    background:
+        linear-gradient(45deg, white 50%, transparent 50%) left calc(50% + 20px) bottom no-repeat,
+        linear-gradient(-45deg, white 50%, transparent 50%) left calc(50% - 20px) bottom no-repeat,
+        url('../img/01.jpg');
+    background-size: 40px 40px, 40px 40px, cover;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -69,7 +72,7 @@ img {
 .hero-title {
     background-color: #63c6ae;
     color: white;
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 600;
     padding: 20px 20px;
     text-decoration: none;
