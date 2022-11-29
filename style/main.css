@@ -1,10 +1,19 @@
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
 }
 
 img {
     max-width: 100%;
+}
+
+.content {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+
 }
 
 .logo-text {
@@ -99,4 +108,50 @@ img {
     font-weight: 600px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 5px;
+}
+
+.people-cards {
+    margin-top: 2.5em;
+}
+
+.people-card:hover {
+    outline: 5px solid #63c6ae;
+    outline-offset: -5px;
+}
+
+.people-card:hover .people-avatar img {
+    transform: translateY(-50%);
+}
+
+.people-card:hover .people-content h2, .people-card:hover .people-content p  {
+    color: #63c6ae;
+}
+
+.people-img {
+    width: 100%;
+}
+
+.people-avatar {
+    margin: -55px auto;
+    width: 88px;
+    height: 88px;
+    overflow: hidden;
+    
+}
+
+.people-content {
+    text-align: center;
+    padding: 40px 25px 10px;
+    border-left: 2px solid #dbe1e7;
+}
+
+.people-content h2 {
+    color: #737c85;
+    font-size: 21px;
+    font-weight:normal;
+}
+
+.people-content p {
+    color: #929da5;
+    font-size: 14px;
 }
