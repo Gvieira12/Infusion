@@ -13,6 +13,7 @@ img {
     margin-left: auto;
     padding-left: 1em;
     padding-right: 1em;
+    max-width: 980px;
 
 }
 
@@ -24,8 +25,14 @@ img {
     font-weight: bold;
     padding: 20px;
     margin: 0;
-    text-align: center;
+    text-align: right;
     float: left;
+    font-size: 24px;
+}
+
+.header {
+    background-color: white;
+    width: 100%;
 }
 
 .header-nav {
@@ -123,7 +130,8 @@ img {
     transform: translateY(-50%);
 }
 
-.people-card:hover .people-content h2, .people-card:hover .people-content p  {
+.people-card:hover .people-content h2,
+.people-card:hover .people-content p {
     color: #63c6ae;
 }
 
@@ -136,19 +144,19 @@ img {
     width: 88px;
     height: 88px;
     overflow: hidden;
-    
+
 }
 
 .people-content {
     text-align: center;
-    padding: 40px 25px 10px;
-    border-left: 2px solid #dbe1e7;
+    padding: 40px 20px 10px;
+    border-left: 1px solid #dbe1e7;
 }
 
 .people-content h2 {
     color: #737c85;
     font-size: 21px;
-    font-weight:normal;
+    font-weight: normal;
 }
 
 .people-content p {
@@ -259,7 +267,7 @@ img {
     font-size: 18px;
 }
 
-.no-js .quote-slideshow figure + figure {
+.no-js .quote-slideshow figure+figure {
     margin-top: 5em;
 }
 
@@ -270,13 +278,76 @@ img {
     font-size: 14px;
 }
 
-.footer-links-li {
-    list-style: none;
+.footer .container h2 {
+    text-transform: uppercase;
+}
+
+.footer-links li {
+    list-style:none
 }
 
 .footer-links a {
     text-decoration: none;
     font-weight: 600;
     display: block;
-    color:#454e51;
+    color: #454e51;
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        position: fixed;
+    }
+
+    .logo-text {
+        width: 25%;
+        box-sizing: border-box;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .header-nav{
+        float: left;
+        width: 75%;
+        clear: none;
+        max-width: 800px;
+    }
+
+    .header-nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header-nav li {
+        border: none;
+    }
+
+    .header-nav a {
+      background: white;
+    }
+
+    .people-cards {
+        display: grid;
+        grid-template-columns:repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+
+    .content .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+    .latest-articles-thumbs {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .footer .container {
+        display: flex;
+    }
+
+    .footer .container > * {
+        margin: 1.5em;
+    }
 }
